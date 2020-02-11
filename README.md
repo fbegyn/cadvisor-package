@@ -1,13 +1,13 @@
-# Prometheus package
+# Cadvisor package
 
-This repo is designed to package prometehus based upon the Github releases.
+This repo is designed to package cadvisor based upon the Github releases.
 The package can be built with the following command:
 
 ```
-./package.sh <alertmanager version> <arch>
+./package.sh <cadvisor version> <arch>
 ```
 
-This command will build a `alertmanager.deb`.
+This command will build a `cadvisor.deb`.
 
 ## TODO
 

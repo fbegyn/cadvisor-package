@@ -1,3 +1,3 @@
 #!/bin/sh
-systemctl stop alertmanager.service
+systemctl stop cadvisor.service
 systemctl disable cadvisor.service
