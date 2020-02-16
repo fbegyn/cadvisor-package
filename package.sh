@@ -1,8 +1,8 @@
 #!/bin/env bash
 ./fetch.sh $1
 
-sed -i "s/vx.y.z/v$1/g" ./nfpm.yaml
+sed "s/vx.y.z/v$1/g" ./nfpm.yaml > nfpm-temp.yaml
 
-nfpm pkg --target cadvisor-$1.$2.deb
+nfpm pkg --config="nfpm-temp.yaml" --target="cadvisor_$1_$2.deb"
 
-rm -rf ./bin
+rm -rf ./bin ./nfpm-temp.yaml
